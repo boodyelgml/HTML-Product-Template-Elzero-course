@@ -1,0 +1,552 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Droid Sans', 'Comfortaa', sans-serif, cursive;
+    padding-top: 50px;
+    transition: all 0.4s;
+    overflow-x: hidden;
+}
+
+* {
+    transition: all 0.4s ease;
+}
+
+.lead {
+    margin: 0;
+}
+
+@import url("../css/font-awesome.min.css");
+
+/******************** adjust the Navbar **********************/
+
+.navbar-default {
+    background-color: rgba(32, 32, 32, 0.8);
+    font-family: 'Comfortaa';
+}
+
+.navbar-default .navbar-brand {
+    color: #0895D1;
+    font-size: 30px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand span {
+    color: #1BA39C;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: forestgreen;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    padding: 15px 15px;
+    color: #d3d3d3;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: #0895D1;
+    color: black;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #000000;
+    background-color: #0895D1;
+}
+
+.navbar-right .dropdown-menu {
+    right: auto;
+    left: 0;
+    min-width: 220px;
+    background-color: rgba(32, 32, 32, 0.8);
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #d9d9d9;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: rgba(32, 32, 32, 0.8);
+    padding-left: 20px;
+    color: white;
+}
+
+
+/*********************adjust the slider***********************/
+
+.carousel-inner .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50px 50px;
+    bottom: 33%;
+}
+
+.carousel-inner .carousel-caption h2 {
+    font-size: 35px;
+    color: #00AA55;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+}
+
+.carousel-inner .carousel-caption p {
+    font-size: 20px;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: initial;
+}
+
+
+/*********************adjust the welcome***********************/
+
+.welcome {
+    padding: 100px 0;
+    background-color: #333333;
+    margin-top: -20px;
+}
+
+.welcome h2 {
+    color: #0895D1;
+    font-weight: bold;
+    padding-bottom: 60px;
+    font-family: 'Comfortaa';
+}
+
+.welcome p {
+    color: white;
+    font-size: 25px;
+}
+
+.welcome span {
+    color: #008000;
+}
+
+
+/*********************adjust the features***********************/
+
+.features {
+    background-color: rgba(17, 17, 17, 1);
+    padding: 100px 0;
+}
+
+.features h2 {
+    font-weight: bold;
+    color: #0895D1;
+    margin: 30px 0;
+    font-family: 'Comfortaa';
+}
+
+.features h2 span {
+    color: white;
+}
+
+.features .col-lg-3 .fa {
+    font-size: 50px;
+    color: #0895D1;
+}
+
+.features .col-lg-3 h4 {
+    color: white;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.features .col-lg-3 p {
+    color: white;
+    font-size: 20px;
+}
+
+
+/******************adjust the testimonials*******************/
+
+.testimonials {
+    padding: 100px 0;
+    background-color: #333333;
+}
+
+.test .carousel-indicators {
+    bottom: -230px;
+    left: auto;
+    width: auto;
+    position: static;
+    margin-left: 0;
+}
+
+.testimonials li {
+    height: 70px;
+    width: 70px;
+    border-radius: 30px 30px;
+    margin: 8px;
+    text-indent: 0;
+    overflow: hidden;
+    opacity: 0.800000011920928955078125;
+}
+
+.testimonials li img {
+    width: 140%;
+    height: 100%;
+}
+
+.testimonials li.active {
+    height: 70px;
+    width: 70px;
+    border: white solid 2px;
+    border-radius: 50%;
+    margin: 8px;
+    opacity: 1;
+}
+
+.testimonials h2 {
+    color: #0895D1;
+    font-weight: bold;
+    font-family: Comfortaa;
+}
+
+.testimonials span {
+    font-size: 16px;
+    color: #008000;
+    font-weight: bold;
+}
+
+.testimonials p {
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+}
+
+
+/******************adjust the plans*******************/
+
+.plans {
+    background-color: rgba(17, 17, 17, 1);
+    padding: 60px 0;
+}
+
+.plans h2 {
+    font-weight: bold;
+    color: #0895D1;
+    padding-bottom: 30px;
+    font-family: 'Comfortaa';
+}
+
+.plans span {
+    color: white;
+}
+
+.plans .plan {
+    background: #fff;
+    border: red dotted 1px;
+    border-radius: 20px;
+}
+
+.plans .plan p {
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    color: black;
+    height: 120px;
+    width: 120px;
+    padding: 40px 0;
+    border: red dotted 1px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.plans .plan:hover p {
+    border: red solid 1px;
+    transform: scale(1.1, 1.1) rotate(360deg);
+}
+
+.plans .plan ul {
+    margin: 15px;
+}
+
+.plans .plan li {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px dotted black;
+}
+
+.plans .plan .btn {
+    margin: 25px 0;
+}
+
+
+/******************adjust the our team*******************/
+
+.our-team {
+    background: url(../images/bg1.jpg) center center no-repeat fixed;
+    background-size: cover;
+    padding: 150px 0;
+    color: white;
+}
+
+.our-team .team {
+    padding: 15px;
+    margin-top: 35px;
+}
+
+.our-team .team h2 {
+    color: #0895D1;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+}
+
+.our-team .team p {
+    padding: 25px;
+    font-size: 20px;
+}
+
+.our-team .team i {
+    font-size: 50px;
+    color: white;
+}
+
+
+/******************adjust the subscribe*******************/
+
+.subscribe {
+    background-color: rgba(17, 17, 17, 1);
+    padding: 150px 0;
+}
+
+.subscribe h2 {
+    color: #0895D1;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+}
+
+.subscribe p {
+    padding: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.subscribe .form-control {
+    margin-right: -5px;
+    border-radius: 0;
+}
+
+.subscribe .btn {
+    border-radius: 0;
+}
+
+
+/******************adjust the statistics*******************/
+
+.stats {
+    background: url(../images/bg2.jpg) center center no-repeat fixed;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+}
+
+.stats h2 {
+    color: #0895D1;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+}
+
+.stats h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.stats p {
+    font-size: 20px;
+    color: #0895D1;
+}
+
+
+/******************adjust the progress*******************/
+
+.progress1 {
+    background-color: rgba(17, 17, 17, 1);
+    padding: 150px 0;
+    color: black;
+}
+
+.progress1 h2 {
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: #0895D1;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+}
+
+.progress1 .progress-text h3 {
+    padding-bottom: 20px;
+    color: red;
+}
+
+.progress1 .progress-text p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.progress1 .progress-charts {
+    padding-top: 20px;
+}
+
+.progress1 .progress {
+    height: 35px;
+}
+
+.progress1 .progress span {
+    line-height: 36px;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+
+
+/******************  adjust the contact  *******************/
+
+.contact-us {
+    background: url(../images/bg3.jpg) center center no-repeat fixed;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+}
+
+.contact-us .h2 {
+    padding-bottom: 40px;
+    color: #0895D1;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+}
+
+.contact-us textarea {
+    height: 105px;
+}
+
+
+/* ------------------------- Start Section prices ---------------------- */
+
+.plans .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.plans .plan {
+    margin: 0px 10px;
+}
+
+@media (max-width: 767px) {
+    .plans .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .plans .plan {
+        margin: 0px 30px;
+    }
+}
+
+
+/* ------------------------- Start Section Our Clients ---------------------- */
+
+.our-clients {
+    background: #EEE;
+    padding: 80px;
+}
+
+.our-clients img {
+    opacity: 0.4000000059604644775390625;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.our-clients img:hover {
+    opacity: 1;
+}
+
+
+/* -------------------- Start Section Ultimate Footer --------------------- */
+
+.footer {
+    background: #111;
+    color: #AAA;
+    padding-top: 10px;
+}
+
+.footer a {
+    color: #AAA;
+}
+
+.footer a:hover {
+    color: #FFF;
+}
+
+.footer h3 {
+    color: #0895D1;
+    letter-spacing: 1px;
+    margin: 20px 0 30px;
+}
+
+.footer .three-column {
+    overflow: hidden;
+}
+
+.footer .three-column li {
+    float: left;
+    width: 33.333333%;
+    padding: 5px 0;
+}
+
+.footer .social-list {
+    overflow: hidden;
+    margin: 20px 0 10px;
+}
+
+.footer .social-list li {
+    float: left;
+    margin-right: 3px;
+    opacity: 0.5;
+}
+
+.footer .social-list li:hover {
+    opacity: 1;
+}
+
+.footer .img-thumbnail {
+    background: rgba(0, 0, 0, 0.2);
+    border: #444 solid 1px;
+    margin-bottom: 5px;
+}
+
+.footer .copyright {
+    background: #333;
+    color: #AAA;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.footer .copyright span {
+    color: #0895D1;
+}
