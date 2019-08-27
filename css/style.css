@@ -1,122 +1,113 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
-    font-family: 'Droid Sans', 'Comfortaa', sans-serif, cursive;
+    font-family: 'Montserrat', 'Source Sans Pro', sans-serif, cursive;
     padding-top: 50px;
-    transition: all 0.4s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
     overflow-x: hidden;
 }
-
 * {
-    transition: all 0.4s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-
 .lead {
     margin: 0;
 }
-
 @import url("../css/font-awesome.min.css");
 
 /******************** adjust the Navbar **********************/
 
 .navbar-default {
-    background-color: rgba(32, 32, 32, 0.8);
-    font-family: 'Comfortaa';
+    background-color: rgba(32, 32, 32, 0.6);
+    border-color: rgba(20, 20, 20, 0.6);
+    font-family: 'montserrat';
 }
-
 .navbar-default .navbar-brand {
     color: #0895D1;
     font-size: 30px;
     padding: 15px;
     font-weight: bold;
 }
-
 .navbar-default .navbar-brand span {
-    color: #1BA39C;
+    color: white;
+    font-weight: 100;
 }
-
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: forestgreen;
+    color: white;
     background-color: transparent;
 }
-
 .navbar-default .navbar-nav > li > a {
-    padding: 15px 15px;
+    padding: 15px 10px;
     color: #d3d3d3;
-    font-size: 16px;
+    font-size: 14px;
 }
-
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: white;
     background-color: transparent;
 }
-
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
     background-color: #0895D1;
     color: black;
 }
-
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #000000;
+    color: white;
     background-color: #0895D1;
 }
-
 .navbar-right .dropdown-menu {
     right: auto;
     left: 0;
     min-width: 220px;
-    background-color: rgba(32, 32, 32, 0.8);
+    background-color: rgba(32, 32, 32, 0.6);
 }
-
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #d9d9d9;
     font-size: 16px;
     padding: 7px;
 }
-
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: rgba(32, 32, 32, 0.8);
+    background-color: rgba(32, 32, 32, 0.6);
     padding-left: 20px;
     color: white;
 }
 
-
 /*********************adjust the slider***********************/
 
 .carousel-inner .carousel-caption {
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 50px 50px;
-    bottom: 33%;
+    background: rgba(20, 20, 20, 0.4);
+    border-radius: 10px 10px;
+    padding: 13px;
+    bottom: 40%;
 }
-
 .carousel-inner .carousel-caption h2 {
-    font-size: 35px;
-    color: #00AA55;
-    font-weight: bold;
-    font-family: 'Comfortaa';
+    font-size: 30px;
+    color: white;
+    font-family: 'montserrat';
+    text-transform: capitalize;
+    line-height: 45px;
 }
-
 .carousel-inner .carousel-caption p {
     font-size: 20px;
+    font-family: 'Source Sans Pro';
 }
-
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     display: initial;
+    height: -webkit-fill-available;
 }
-
 
 /*********************adjust the welcome***********************/
 
@@ -125,23 +116,22 @@ body {
     background-color: #333333;
     margin-top: -20px;
 }
-
 .welcome h2 {
+    font-size: 35px;
     color: #0895D1;
-    font-weight: bold;
     padding-bottom: 60px;
-    font-family: 'Comfortaa';
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .welcome p {
     color: white;
     font-size: 25px;
+    font-family: 'Source Sans Pro';
 }
-
 .welcome span {
-    color: #008000;
+    color: #0895D1;
+    ;
 }
-
 
 /*********************adjust the features***********************/
 
@@ -149,34 +139,32 @@ body {
     background-color: rgba(17, 17, 17, 1);
     padding: 100px 0;
 }
-
 .features h2 {
-    font-weight: bold;
     color: #0895D1;
+    font-size: 40px;
     margin: 30px 0;
-    font-family: 'Comfortaa';
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .features h2 span {
     color: white;
 }
-
 .features .col-lg-3 .fa {
-    font-size: 50px;
-    color: #0895D1;
-}
-
-.features .col-lg-3 h4 {
+    font-size: 40px;
     color: white;
+}
+.features .col-lg-3 h4 {
+    color: #0895D1;
     padding: 20px 0;
+    font-size: 25px;
+    font-family: 'Source Sans Pro';
     font-weight: bold;
 }
-
 .features .col-lg-3 p {
     color: white;
     font-size: 20px;
+    font-family: 'Source Sans Pro';
 }
-
 
 /******************adjust the testimonials*******************/
 
@@ -184,7 +172,6 @@ body {
     padding: 100px 0;
     background-color: #333333;
 }
-
 .test .carousel-indicators {
     bottom: -230px;
     left: auto;
@@ -192,7 +179,6 @@ body {
     position: static;
     margin-left: 0;
 }
-
 .testimonials li {
     height: 70px;
     width: 70px;
@@ -202,12 +188,10 @@ body {
     overflow: hidden;
     opacity: 0.800000011920928955078125;
 }
-
 .testimonials li img {
     width: 140%;
     height: 100%;
 }
-
 .testimonials li.active {
     height: 70px;
     width: 70px;
@@ -216,25 +200,23 @@ body {
     margin: 8px;
     opacity: 1;
 }
-
 .testimonials h2 {
     color: #0895D1;
-    font-weight: bold;
-    font-family: Comfortaa;
+    font-size: 40px;
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .testimonials span {
     font-size: 16px;
-    color: #008000;
+    color: #0895D1;
     font-weight: bold;
 }
-
 .testimonials p {
     color: white;
-    font-size: 25px;
+    font-size: 22px;
+    font-family: 'Source Sans Pro';
     padding: 30px;
 }
-
 
 /******************adjust the plans*******************/
 
@@ -242,87 +224,76 @@ body {
     background-color: rgba(17, 17, 17, 1);
     padding: 60px 0;
 }
-
 .plans h2 {
-    font-weight: bold;
     color: #0895D1;
-    padding-bottom: 30px;
-    font-family: 'Comfortaa';
+    font-size: 40px;
+    padding-bottom: 50px;
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .plans span {
     color: white;
 }
-
 .plans .plan {
     background: #fff;
-    border: red dotted 1px;
-    border-radius: 20px;
+    border-radius: 5px;
+    padding: 10px
 }
-
 .plans .plan p {
     background: rgba(0, 0, 0, 0.1);
-    font-size: 25px;
+    font-size: 20px;
     color: black;
-    height: 120px;
-    width: 120px;
-    padding: 40px 0;
-    border: red dotted 1px;
+    height: 80px;
+    width: 80px;
+    padding: 25px 0;
     border-radius: 50%;
     margin: auto;
 }
-
 .plans .plan:hover p {
     border: red solid 1px;
+    -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+    -ms-transform: scale(1.1, 1.1) rotate(360deg);
     transform: scale(1.1, 1.1) rotate(360deg);
 }
-
 .plans .plan ul {
     margin: 15px;
 }
-
 .plans .plan li {
-    padding: 10px 0;
-    font-size: 18px;
+    padding: 6px 0;
+    font-size: 16px;
     font-weight: bold;
-    border-bottom: 1px dotted black;
+    font-family: 'Source Sans Pro';
 }
-
 .plans .plan .btn {
-    margin: 25px 0;
+    margin: 10px 0;
 }
-
 
 /******************adjust the our team*******************/
 
 .our-team {
     background: url(../images/bg1.jpg) center center no-repeat fixed;
     background-size: cover;
-    padding: 150px 0;
+    padding: 80px 0px;
     color: white;
 }
-
 .our-team .team {
     padding: 15px;
     margin-top: 35px;
 }
-
 .our-team .team h2 {
     color: #0895D1;
-    font-weight: bold;
-    font-family: 'Comfortaa';
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .our-team .team p {
     padding: 25px;
     font-size: 20px;
+    font-family: 'Source Sans Pro';
 }
-
 .our-team .team i {
-    font-size: 50px;
+    font-size: 40px;
     color: white;
 }
-
 
 /******************adjust the subscribe*******************/
 
@@ -330,28 +301,25 @@ body {
     background-color: rgba(17, 17, 17, 1);
     padding: 150px 0;
 }
-
 .subscribe h2 {
+    font-size: 40px;
     color: #0895D1;
-    font-weight: bold;
-    font-family: 'Comfortaa';
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .subscribe p {
-    padding: 25px;
+    padding: 18px;
     font-size: 20px;
+    font-family: 'Source Sans Pro';
     color: white;
 }
-
 .subscribe .form-control {
     margin-right: -5px;
     border-radius: 0;
 }
-
 .subscribe .btn {
     border-radius: 0;
 }
-
 
 /******************adjust the statistics*******************/
 
@@ -361,24 +329,20 @@ body {
     color: white;
     padding: 150px 0;
 }
-
 .stats h2 {
     color: #0895D1;
-    font-weight: bold;
-    font-size: 50px;
-    font-family: 'Comfortaa';
+    font-size: 40px;
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .stats h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 }
-
 .stats p {
     font-size: 20px;
     color: #0895D1;
 }
-
 
 /******************adjust the progress*******************/
 
@@ -387,33 +351,29 @@ body {
     padding: 150px 0;
     color: black;
 }
-
 .progress1 h2 {
-    padding-bottom: 40px;
-    font-size: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;
     color: #0895D1;
-    font-weight: bold;
-    font-family: 'Comfortaa';
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .progress1 .progress-text h3 {
     padding-bottom: 20px;
-    color: red;
+    color: #0895D1;
 }
-
 .progress1 .progress-text p {
     color: white;
+    font-size: 20px;
+    font-family: 'Source Sans Pro';
     margin-bottom: 10px;
 }
-
 .progress1 .progress-charts {
     padding-top: 20px;
 }
-
 .progress1 .progress {
     height: 35px;
 }
-
 .progress1 .progress span {
     line-height: 36px;
     display: block;
@@ -423,7 +383,6 @@ body {
     text-indent: 10px;
 }
 
-
 /******************  adjust the contact  *******************/
 
 .contact-us {
@@ -432,34 +391,39 @@ body {
     color: white;
     padding: 150px 0;
 }
-
 .contact-us .h2 {
     padding-bottom: 40px;
     color: #0895D1;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Comfortaa';
+    font-size: 40px;
+    font-family: 'montserrat';
+    text-transform: uppercase;
 }
-
 .contact-us textarea {
     height: 105px;
 }
-
+.contact-us .btn:hover {
+    background-color: #0895D1;
+    ;
+}
 
 /* ------------------------- Start Section prices ---------------------- */
 
 .plans .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
-
 .plans .plan {
     margin: 0px 10px;
 }
-
 @media (max-width: 767px) {
     .plans .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .plans .plan {
@@ -467,24 +431,20 @@ body {
     }
 }
 
-
 /* ------------------------- Start Section Our Clients ---------------------- */
 
 .our-clients {
     background: #EEE;
     padding: 80px;
 }
-
 .our-clients img {
     opacity: 0.4000000059604644775390625;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 .our-clients img:hover {
     opacity: 1;
 }
-
 
 /* -------------------- Start Section Ultimate Footer --------------------- */
 
@@ -493,52 +453,42 @@ body {
     color: #AAA;
     padding-top: 10px;
 }
-
 .footer a {
     color: #AAA;
 }
-
 .footer a:hover {
     color: #FFF;
 }
-
 .footer h3 {
     color: #0895D1;
     letter-spacing: 1px;
     margin: 20px 0 30px;
 }
-
 .footer .three-column {
     overflow: hidden;
 }
-
 .footer .three-column li {
     float: left;
     width: 33.333333%;
     padding: 5px 0;
 }
-
 .footer .social-list {
     overflow: hidden;
     margin: 20px 0 10px;
 }
-
 .footer .social-list li {
     float: left;
     margin-right: 3px;
     opacity: 0.5;
 }
-
 .footer .social-list li:hover {
     opacity: 1;
 }
-
 .footer .img-thumbnail {
     background: rgba(0, 0, 0, 0.2);
     border: #444 solid 1px;
     margin-bottom: 5px;
 }
-
 .footer .copyright {
     background: #333;
     color: #AAA;
@@ -546,7 +496,6 @@ body {
     margin-top: 30px;
     font-size: 18px;
 }
-
 .footer .copyright span {
     color: #0895D1;
 }

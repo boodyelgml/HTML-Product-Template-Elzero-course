@@ -1,8 +1,13 @@
 @media (max-width: 767px) {
     /******************** adjust the Navbar **********************/
-    
+    body {
+        overflow-x: hidden;
+    }
     .navbar-toggle {
         margin-right: 30px;
+    }
+    .navbar-default {
+        background-color: rgba(32, 32, 32, 0.6);
     }
     .navbar-default .navbar-brand span {
         color: beige;
@@ -15,12 +20,12 @@
     .navbar-default .navbar-nav>.open>a,
     .navbar-default .navbar-nav>.open>a:hover,
     .navbar-default .navbar-nav>.open>a:focus {
-        background-color: #00AA55;
+        background-color: #0895D1;
     }
     .navbar-default .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:hover,
     .navbar-default .navbar-nav>.active>a:focus {
-        background-color: #00AA55;
+        background-color: #0895D1;
     }
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
         color: #d3d3d3;
@@ -29,14 +34,14 @@
     }
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
     /*********************adjust the slider***********************/
-    
     .carousel-inner .carousel-caption {
         border-radius: 15px 15px;
         bottom: 110px;
         padding: 2px;
     }
     .carousel-inner .carousel-caption h2 {
-        font-size: 20px;
+        font-size: 22px;
+        line-height: 32px;
     }
     .carousel-inner .carousel-caption p {
         font-size: 12px;
@@ -49,101 +54,122 @@
         height: 350px;
     }
     /*********************adjust the welcome***********************/
-    
     .welcome {
-        display: none;
+        padding: 30px;
+    }
+    .welcome h2 {
+        font-size: 25px;
+        color: #0895D1;
+        padding-bottom: 20px;
+    }
+    .welcome p {
+        font-size: 18px;
     }
     /*********************adjust the features***********************/
-    
     .features {
         padding: 30px 0px;
         margin-top: -20px;
         /*50margin at h1 total = 150px;*/
     }
+    .features h2 {
+        font-size: 25px
+    }
     .features .col-lg-3 h4 {
-        color: #037B03;
-        font-weight: bold;
+        color: #0895D1;
         padding: 0;
     }
     .features .col-lg-3 p {
         font-size: 16px;
         padding-bottom: 15px;
         margin-bottom: 15px;
-        border-bottom: 1px dotted white;
+        border-bottom: 1px solid white;
     }
     /******************adjust the testimonials*******************/
-    
     .testimonials {
         padding: 30px 0px;
     }
+    .testimonials h2 {
+        font-size: 25px;
+    }
     /******************adjust the plans*******************/
-    
     .plans {
         padding: 30px 0px;
     }
-    .plans .plan {
-        margin-bottom: 20px;
+    .plans h2 {
+        font-size: 25px;
     }
-    .plans .plan h1 {} .plans .plan p {
-        font-size: 30px;
+    .plans .plan {
+        margin-bottom: 25px;
+    }
+    .plans .plan h1 {
+        font-size: 25px;
+    }
+    .plans .plan p {
+        font-size: 25px;
     }
     .plans .plan:hover p {
         border: 1px solid red;
+        -webkit-transform: scale(1.1, 1.1)rotate(360deg);
+        -ms-transform: scale(1.1, 1.1)rotate(360deg);
         transform: scale(1.1, 1.1)rotate(360deg);
     }
     /******************adjust the our team*******************/
-    
     .our-team {
         padding: 30px 0px;
+    }
+    .our-team h2 {
+        font-size: 25px;
+        display: block;
     }
     .our-team .team p {
         padding: 10px 0px;
     }
     /******************adjust the subscribe*******************/
-    
     .subscribe {
         padding: 30px 0px;
+    }
+    .subscribe h2 {
+        font-size: 25px;
     }
     .subscribe .btn {
         margin-top: 20px;
     }
     /******************adjust the statistics*******************/
-    
     .stats {
         padding: 30px 0px;
     }
+    .stats h1,
+    .stats h2 {
+        font-size: 25px;
+    }
     /******************adjust the progress*******************/
-    
     .progress1 {
         padding: 30px 0px;
         text-align: center;
     }
     .progress1 h2 {
         padding-bottom: 0px;
-        font-size: 40px;
+        font-size: 25px;
     }
     .progress1 .progress-text p {
         padding-bottom: 20px;
     }
     .progress1 .progress-charts {
-        padding-top: 10px;
+        padding-top: 20px;
     }
     /******************adjust the contact*******************/
-    
     .contact-us {
         padding: 30px 0px;
     }
     .contact-us .h2 {
         padding-bottom: 20px;
-        font-size: 40px;
+        font-size: 25px;
     }
     /* ------------------------- Start Section Our Clients -------------------------- */
-    
     .our-clients {
         padding: 30px;
     }
     /* ------------------------- Start Section Ultimate Footer -------------------------- */
-    
     .footer {
         text-align: center;
     }
